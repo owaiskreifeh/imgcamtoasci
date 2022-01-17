@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASCII art</title>
+    <style>
+        body {
+            font-family: monospace;
+            font-size: 1.5em;
+        }
+      canvas {
+        border: 1px solid black;
+      }
+      #ascii-preview{
+          word-break: break-all;
+          font-size: xx-small;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ASCII art</h1>
+    <input id="input-img" type="file" />
+
+    <canvas id="canvas-preview"></canvas>
+    <canvas id="canvas-bw"></canvas>
+    <video id="video-preview" width="320" height="240" autoplay></video>
+    <div>
+      <pre id="ascii-preview"></pre>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
